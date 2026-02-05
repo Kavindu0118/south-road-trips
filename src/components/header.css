@@ -1,0 +1,243 @@
+/* Header Container */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #f97316;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.5));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.logo-accent {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f97316;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f97316, #06b6d4);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(249, 115, 22, 0.1);
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+/* Book Button */
+.book-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  margin-left: 1rem;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+  text-decoration: none;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6);
+}
+
+.book-btn:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.book-btn:hover .btn-icon {
+  transform: translateX(3px);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .header-inner {
+    padding: 0 2rem;
+    height: 70px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 300px;
+    height: calc(100vh - 70px);
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 2rem;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav-link {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-link::before {
+    display: none;
+  }
+
+  .book-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 0 1.5rem;
+  }
+
+  .logo-main {
+    font-size: 1.2rem;
+  }
+
+  .logo-accent {
+    font-size: 0.75rem;
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+}
