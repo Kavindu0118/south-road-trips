@@ -1,4 +1,8 @@
 import './About.css';
+import customerImg1 from '../assets/testimonials/Ines.jpeg'
+import customerImg2 from '../assets/testimonials/Valentin.jpeg'
+import customerImg3 from '../assets/testimonials/Talis.jpeg'
+import customerImg4 from '../assets/testimonials/customer4.png'
 
 const About = () => {
   const stats = [
@@ -10,36 +14,36 @@ const About = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Mitchell',
-      location: 'New York, USA',
+      name: 'Ines Muckenhuber',
+      location: 'Germany',
       rating: 5,
-      comment: 'Amazing experience! The vehicle was pristine and the tour guide was incredibly knowledgeable. Would definitely recommend South Road Trips to anyone.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop',
-      tour: 'Coastal Paradise Tour'
+      comment: 'Everything went perfectly - contact via WhatsApp and a very good price.',
+      image: customerImg1,
+      tour: 'Scooter Rental'
     },
     {
-      name: 'James Anderson',
-      location: 'London, UK',
+      name: 'Valentin',
+      location: 'Germany',
       rating: 5,
-      comment: 'Best road trip ever! The customer service was outstanding and every detail was perfectly planned. Can\'t wait to book another adventure.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop',
-      tour: 'Mountain Adventure'
+      comment: 'Very nice owner who is flexible. Highly recommended!',
+      image: customerImg2,
+      tour: 'Scooter Rental'
     },
     {
-      name: 'Emily Rodriguez',
-      location: 'Barcelona, Spain',
+      name: 'Talis Viirpalu',
+      location: 'Estonia',
       rating: 5,
-      comment: 'The luxury SUV exceeded all expectations. Smooth ride, comfortable, and the flexible routes made our journey perfect. Highly professional service!',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop',
-      tour: 'Wine Country Escape'
+      comment: 'Even though there weren’t any official signs at the place, we walked in and just asked for a scooter. They didn’t have it available immediately, but arranged it in 30 minutes. While we waited, we got some cold juices and felt very welcomed. Communication was very good with the guy, he explained everything thoroughly and expanded the rent with no issues. 10/10 👌🏽',
+      image: customerImg3,
+      tour: 'Scooter Rental'
     },
     {
-      name: 'David Chen',
-      location: 'Singapore',
+      name: 'Dorian',
+      location: 'France',
       rating: 5,
-      comment: 'Outstanding service from start to finish. The team went above and beyond to ensure we had an unforgettable experience. Worth every penny!',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop',
-      tour: 'Desert Safari Adventure'
+      comment: 'Scooter was in good condition, price was fair !',
+      image: customerImg4,
+      tour: 'Scooter Rental'
     }
   ];
 
@@ -84,7 +88,19 @@ const About = () => {
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>Certified & Licensed</span>
+              <span>Experienced</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span>Trusted</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span>Comfortable</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span>Affordable</span>
             </div>
           </div>
         </div>

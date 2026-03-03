@@ -1,4 +1,12 @@
 import './Tours.css';
+import yalaImg from '../assets/tours/yala.jpeg';
+import ellaImg from '../assets/tours/ella.jpg';
+import galleImg from '../assets/tours/galle.jpg';
+import kandyImg from '../assets/tours/kandy.jpg';
+import nuwaraeliyaImg from '../assets/tours/nuwaraeliya.jpg';
+import sigiriyaImg from '../assets/tours/sigiriya.jpg';
+import anuradhapuraImg from '../assets/tours/anuradhapura.jpg';
+import customTourImg from '../assets/tours/custom.png';
 
 const Tours = () => {
   const tours = [
@@ -10,7 +18,7 @@ const Tours = () => {
       reviews: 156,
       description: 'Experience thrilling wildlife encounters in Sri Lanka\'s most famous national park, home to leopards, elephants, and exotic birds',
       highlights: ['Leopard Safari', 'Elephant Herds', 'Bird Watching', 'Professional Guide'],
-      image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop'
+      image: yalaImg
     },
     {
       name: 'Ella Hill Country Tour',
@@ -20,8 +28,7 @@ const Tours = () => {
       reviews: 203,
       description: 'Explore the stunning hill country of Ella with breathtaking views, waterfalls, and lush tea estates',
       highlights: ['Scenic Train Ride', 'Hiking Trails', 'Tea Factory Visit', 'Waterfall Views'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop'
-    },
+      image: ellaImg    },
     {
       name: 'Galle Fort Heritage Tour',
       duration: 'Half Day',
@@ -30,7 +37,7 @@ const Tours = () => {
       reviews: 187,
       description: 'Walk through history in this UNESCO World Heritage Site featuring Dutch colonial architecture and coastal views',
       highlights: ['Historic Fort Walk', 'Sunset Views', 'Local Shops', 'Photography Spots'],
-      image: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&h=400&fit=crop'
+      image: galleImg
     },
     {
       name: 'Kandy Cultural Experience',
@@ -40,7 +47,7 @@ const Tours = () => {
       reviews: 234,
       description: 'Immerse yourself in Sri Lankan culture with visits to sacred temples, royal gardens, and traditional performances',
       highlights: ['Temple Visit', 'Cultural Show', 'Botanical Gardens', 'City Tour'],
-      image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=600&h=400&fit=crop'
+      image: kandyImg
     },
     {
       name: 'Nuwara Eliya Tea Country',
@@ -50,7 +57,7 @@ const Tours = () => {
       reviews: 145,
       description: 'Experience the cool climate and colonial charm of Little England with stunning tea estates and scenic landscapes',
       highlights: ['Tea Tasting', 'Factory Tour', 'Lake Activities', 'Mountain Views'],
-      image: 'https://images.unsplash.com/photo-1563789031959-4c02bcb41319?w=600&h=400&fit=crop'
+      image: nuwaraeliyaImg
     },
     {
       name: 'Anuradhapura Ancient City',
@@ -60,7 +67,7 @@ const Tours = () => {
       reviews: 112,
       description: 'Journey through 2,500 years of history exploring ancient ruins, sacred sites, and architectural marvels',
       highlights: ['Ancient Temples', 'Historical Sites', 'Sacred Bo Tree', 'Expert Guide'],
-      image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop'
+      image: anuradhapuraImg
     },
     {
       name: 'Sigiriya Rock Fortress',
@@ -70,7 +77,7 @@ const Tours = () => {
       reviews: 298,
       description: 'Climb the iconic Sigiriya Rock Fortress, a UNESCO World Heritage Site with stunning ancient frescoes and views',
       highlights: ['Rock Climbing', 'Ancient Frescoes', 'Panoramic Views', 'Historical Site'],
-      image: 'https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=600&h=400&fit=crop'
+      image: sigiriyaImg
     },
     {
       name: 'Custom Tour Packages',
@@ -80,7 +87,7 @@ const Tours = () => {
       reviews: 89,
       description: 'Design your perfect Sri Lankan adventure with our fully customizable tour packages tailored to your preferences',
       highlights: ['Custom Itinerary', 'Flexible Timing', 'Personal Guide', 'Any Destination'],
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop'
+      image: customTourImg
     },
     {
       name: 'Airport Shuttle Service',
@@ -113,13 +120,7 @@ const Tours = () => {
               <div className="tour-content">
                 <div className="tour-header-info">
                   <h3 className="tour-name">{tour.name}</h3>
-                  <div className="tour-rating">
-                    <svg viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <span>{tour.rating}</span>
-                    <span className="review-count">({tour.reviews} reviews)</span>
-                  </div>
+                  
                 </div>
                 <p className="tour-description">{tour.description}</p>
                 <div className="tour-destinations">
@@ -142,7 +143,7 @@ const Tours = () => {
                 </div>
                 <div className="tour-footer">
                   <a 
-                    href={`https://wa.me/94764546169?text=Hi!%20I'd%20like%20to%20book%20the%20${encodeURIComponent(tour.name)}%20(${tour.duration}).%20Please%20share%20the%20details!`}
+                    href={`https://wa.me/94764549169?text=Hi!%20I'd%20like%20to%20book%20the%20${encodeURIComponent(tour.name)}%20(${tour.duration}).%20Please%20share%20the%20details!`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="book-tour-btn"

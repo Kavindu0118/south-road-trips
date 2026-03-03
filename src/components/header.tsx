@@ -27,7 +27,7 @@ const Header = () => {
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact Us</a>
           <a 
-            href="https://wa.me/94764546169?text=Hi%20South%20Road%20Trips!%20I'd%20like%20to%20make%20a%20booking.%20Can%20you%20help%20me%3F" 
+            href="https://wa.me/94764549169?text=Hi%20South%20Road%20Trips!%20I'd%20like%20to%20make%20a%20booking.%20Can%20you%20help%20me%3F" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="book-btn"

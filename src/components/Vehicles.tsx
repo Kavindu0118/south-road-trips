@@ -1,4 +1,8 @@
 import './Vehicles.css';
+import scooter from '../assets/vehicles/scooter.png'
+import motorbike from '../assets/vehicles/motorbike.jpg'
+import tuktuk from '../assets/vehicles/tuktuk.png'
+import car from '../assets/vehicles/car.png'
 
 const Vehicles = () => {
   const vehicles = [
@@ -9,7 +13,7 @@ const Vehicles = () => {
       luggage: 1,
       transmission: 'Automatic',
       features: ['Fuel Efficient', 'Easy Parking', 'Perfect for City', 'Helmet Included'],
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop'
+      image: scooter
     },
     {
       name: 'Motorbike',
@@ -18,7 +22,7 @@ const Vehicles = () => {
       luggage: 1,
       transmission: 'Manual',
       features: ['Powerful Engine', 'Long Distance', 'Comfortable Ride', 'Safety Gear'],
-      image: 'https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=600&h=400&fit=crop'
+      image: motorbike
     },
     {
       name: 'Tuk Tuk',
@@ -27,7 +31,7 @@ const Vehicles = () => {
       luggage: 2,
       transmission: 'Manual',
       features: ['Authentic Experience', 'Great for Tours', 'Economical', 'Easy Maneuver'],
-      image: 'https://images.unsplash.com/photo-1604882737470-8c67f0e0b9b0?w=600&h=400&fit=crop'
+      image: tuktuk
     },
     {
       name: 'Car',
@@ -36,8 +40,7 @@ const Vehicles = () => {
       luggage: 3,
       transmission: 'Automatic',
       features: ['Air Conditioning', 'Comfortable Seats', 'Music System', 'GPS Navigation'],
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop'
-    }
+      image: car    }
   ];
 
   return (
@@ -88,7 +91,7 @@ const Vehicles = () => {
                 </div>
                 <div className="vehicle-footer">
                   <a 
-                    href={`https://wa.me/94764546169?text=Hi!%20I'm%20interested%20in%20booking%20a%20${encodeURIComponent(vehicle.name)}%20(${vehicle.category}).%20Can%20you%20provide%20more%20details%3F`}
+                    href={`https://wa.me/94764549169?text=Hi!%20I'm%20interested%20in%20booking%20a%20${encodeURIComponent(vehicle.name)}%20(${vehicle.category}).%20Can%20you%20provide%20more%20details%3F`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="book-vehicle-btn"

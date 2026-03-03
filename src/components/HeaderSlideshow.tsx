@@ -60,7 +60,7 @@ const HeaderSlideshow = () => {
             <h1 className="slide-title">{slide.title}</h1>
             <p className="slide-subtitle">{slide.subtitle}</p>
             <a 
-              href="https://wa.me/94764546169?text=Hi%20South%20Road%20Trips!%20I'm%20interested%20in%20booking%20a%20tour%20or%20vehicle.%20Can%20you%20help%20me%3F" 
+              href="https://wa.me/94764549169?text=Hi%20South%20Road%20Trips!%20I'm%20interested%20in%20booking%20a%20tour%20or%20vehicle.%20Can%20you%20help%20me%3F" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="slide-cta"
