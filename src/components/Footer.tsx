@@ -1,4 +1,5 @@
 import './Footer.css';
+import logo from '../assets/Asset-3.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/src/assets/logo-new.png" alt="South Road Trips" className="footer-logo-image" />
+              <img src={logo} alt="South Road Trips" className="footer-logo-image" />
             </div>
             <p className="footer-description">
               Your trusted partner for unforgettable journeys. Explore the world with comfort, 

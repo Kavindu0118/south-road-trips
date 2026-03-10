@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./header.css";
+import logo from '../assets/Asset-3.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
       <div className="header-inner">
         
         <div className="logo">
-          <img src="/src/assets/logo-new.png" alt="South Road Trips" className="logo-image" />
+          <img src={logo} alt="South Road Trips" className="logo-image" />
         </div>
 
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
