@@ -1,0 +1,42 @@
+.article-page-container {
+  min-height: 100vh;
+  background: white;
+}
+
+.article-page-navigation {
+  padding: 2rem;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #0f172a;
+  border: 2px solid #0f172a;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.back-to-home-btn:hover {
+  background: #0f172a;
+  color: white;
+}
+
+.back-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.back-to-home-btn:hover .back-arrow {
+  transform: translateX(-4px);
+}
